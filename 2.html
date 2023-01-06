@@ -12,24 +12,71 @@
 </script>
       <title>윔블던 챔피언쉽(The Championships, Wimbledon)</title>
       <meta charset="utf-8">
+      <style>
+        body {
+          margin: 0;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+        }
+        h1 {
+          font-size: 45px;
+          text-align: center;
+          border-bottom: 1px solid gray;
+          margin: 0;
+          padding: 20px;
+        }
+        ol {
+          border-right: 1px solid gray;
+          width: 130px;
+          margin: 0;
+          padding: 20px;
+        }
+        .content {
+          border: 1px solid gray;
+        }
+        #grid {
+          display: grid;
+          grid-template-columns: 170px 1fr;
+        }
+        #grid ol {
+          padding-left: 35px;
+        }
+        #content {
+          padding-left: 30px;
+        }
+        @media(max-width:500px) {
+          #grid {
+          display: block;
+          }
+          ol {
+            border-right: none;
+          }
+        }
+      </style>
     </head>
     <body>
       <h1><a href="index.html">TENNIS</a></h1>
-      <ol>
-        <li><a href="1.html">호주오픈</a></li>
-        <li><a href="2.html">윔블던 챔피언쉽</a></li>
-        <li><a href="3.html">프랑스오픈</a></li>
-      </ol>
-      <h2>윔블던 챔피언쉽 The Championships, Wimbledon</h2>
-      <p>
-      영국 런던 윔블던에서 열리는 테니스 그랜드슬램 대회로, 
-      세계에서 가장 오래된 테니스 토너먼트 대회이며 이로 인해 테니스 대회 중 최고의 권위를 가진 대회로 꼽힌다.
-      경기가 열리는 장소는 영국 런던 머튼 구의 윔블던에 위치한 올 잉글랜드 테니스 클럽(The All England Tennis Club)이며, 
-      그랜드 슬램 대회들 중 유일하게 잔디 코트를 사용한다. 첫 대회는 1877년에 열렸으며, 
-      매년 6월 4주차 ~ 7월 1주차 경에 대회가 열린다. 
-      대회 1주차 일요일에 잔디 보호를 위해 경기를 쉬는 것이 특징이다.
-      5개의 메인 경기 부문과 4개의 주니어 경기 부문, 4개의 초청 경기 부문으로 구성되어 있다.
-      </p>
+      <div id="grid">
+        <ol>
+          <li><a href="1.html">호주오픈</a></li>
+          <li><a href="2.html">윔블던 챔피언쉽</a></li>
+          <li><a href="3.html">프랑스오픈</a></li>
+        </ol>
+        <div id="content">
+          <h2>윔블던 챔피언쉽 The Championships, Wimbledon</h2>
+          <p>
+          영국 런던 윔블던에서 열리는 테니스 그랜드슬램 대회로, 
+          세계에서 가장 오래된 테니스 토너먼트 대회이며 이로 인해 테니스 대회 중 최고의 권위를 가진 대회로 꼽힌다.
+          경기가 열리는 장소는 영국 런던 머튼 구의 윔블던에 위치한 올 잉글랜드 테니스 클럽(The All England Tennis Club)이며, 
+          그랜드 슬램 대회들 중 유일하게 잔디 코트를 사용한다. 첫 대회는 1877년에 열렸으며, 
+          매년 6월 4주차 ~ 7월 1주차 경에 대회가 열린다. 
+          대회 1주차 일요일에 잔디 보호를 위해 경기를 쉬는 것이 특징이다.
+          5개의 메인 경기 부문과 4개의 주니어 경기 부문, 4개의 초청 경기 부문으로 구성되어 있다.
+          </p>
+        </div>
+      </div>
       <p>
         <div id="disqus_thread"></div>
 <script>
